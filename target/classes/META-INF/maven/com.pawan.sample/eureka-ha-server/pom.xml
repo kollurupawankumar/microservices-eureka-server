@@ -8,7 +8,7 @@
   <properties>
  	<java.version>1.8</java.version>
   	<spring-cloud.version>Dalston.SR4</spring-cloud.version>
-  	
+  	<start-class>com.pawan.EurekaServer.EurekaHAServerApplication</start-class>
   </properties>
   
   <parent>
