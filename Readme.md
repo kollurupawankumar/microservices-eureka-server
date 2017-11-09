@@ -1,5 +1,5 @@
 This is a Eureka server application :
- the entire logic is present in the application.yml file. 
+ the entire logic is present in the application.application file. 
  
  There are two modes here :
  1. Standalone
@@ -24,17 +24,17 @@ This is a Eureka server application :
       -Dserver.port=1111 
       -DhostName=localhost 
       -Denvironment=dev/stg/prd
-      -DpeerUrls=http://localhost:1111/eureka/,
+      -DeurekaServerUrls=http://localhost:1111/eureka/,
       			 http://localhost:2222/eureka/ 
      -jar eureka-ha-server-0.0.1-SNAPSHOT.jar &
      
      
      
 java -Dspring.profiles.active=clustered 
-	 -DappPort=1112 
+	 -Dserver.port=1112 
 	 -DhostName=localhost 
 	 -Denvironment=dev/stg/prd
-	 -DpeerUrls=http://localhost:1111/eureka/,
+	 -DeurekaServerUrls=http://localhost:1111/eureka/,
 	 			http://localhost:1112/eureka/ 
 	 -jar eureka-ha-server-0.0.1-SNAPSHOT.jar &
 	 
