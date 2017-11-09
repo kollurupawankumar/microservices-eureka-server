@@ -1,5 +1,5 @@
 This is a Eureka server application :
- the entire logic is present in the application.application file. 
+ the entire logic is present in the application.properties file. 
  
  There are two modes here :
  1. Standalone
