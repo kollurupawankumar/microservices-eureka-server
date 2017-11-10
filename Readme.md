@@ -2,8 +2,8 @@ This is a Eureka server application :
  the entire logic is present in the application.properties file. 
  
  There are two modes here :
- 1. Standalone
- 2. Clustered
+ 1. Standalone mode
+ 2. Clustered mode
  
  run maven install and the jar file is formed in the target folder.
  
